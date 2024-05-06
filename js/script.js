@@ -11,27 +11,37 @@ async function init() {
         createMovies(movie);});
 }
 
-function createMovies(movie) {
-    app.innerHTML += `
-    <div class="movie">
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.original_title}">
-        <h2>${movie.original_title}</h2>
-        <p>${movie.overview}</p>
-    </div>
-    `;
+// function createMovies(movie) {
+//     app.innerHTML += `
+//     <div class="movie">
+//         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.original_title}">
+//         <h2>${movie.original_title}</h2>
+//         <p>${movie.overview}</p>
+//     </div>
+//     `;
 
+// }
+
+async function search() {
+    let searchValue = searchBocks.value;
+    let url = `https://api.themoviedb.org/3/person/popular?api_key=754711d5f2e577bae7dc53ecdd0d7105=${searchValue}`;
+    app.innerHTML = '';
+    let actors = await fetchData(url);
+    actors.results.forEach(actor => {
+        createItem(actor);
+    });
 }
 
 
 // Array of image paths
 const imagePaths = [
-    '/Bilder/bildeins.jpg.webp',
+    '/Bilder/jason.png',
     '/Bilder/bildeins.jpg.webp',
     '/Bilder/annehathaway.png',
 ];
 
 const hoverImagePaths = [
-    '/Bilder/bildzwei.jpg',
+    '/Bilder/jason_hover.png',
     '/Bilder/bildzwei.jpg',
     '/Bilder/annehathaway_hover.png', // Hier muss für jedes Bild der entsprechende Pfad eingetragen werden
 ];
