@@ -94,6 +94,7 @@ function createMovies(movie) {
 
 
 
+
 //nicht mehr anfassen!!
 async function fetchData(url) {
     try {
