@@ -1,8 +1,6 @@
 
 
-.bildeins,
-.bildzwei,
-.bilddrei {
+.bild-container {
     display: inline-block;
     width: 30%; /* Adjust width as needed */
     margin: 0%; /* Add space between images */
@@ -12,7 +10,7 @@
     position: relative;
 }
 
-.bildlinkstwo {
+.bild {
     width: 100%;
     height: auto;
 }
@@ -30,3 +28,5 @@
 .image-container-links:hover .hoverimagelinks {
     opacity: 1;
 }
+
+

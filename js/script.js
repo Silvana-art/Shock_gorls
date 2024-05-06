@@ -23,6 +23,71 @@ function createMovies(movie) {
 }
 
 
+// Array of image paths
+const imagePaths = [
+    '/Bilder/bildeins.jpg.webp',
+    '/Bilder/bildeins.jpg.webp',
+    '/Bilder/annehathaway.png',
+];
+
+const hoverImagePaths = [
+    '/Bilder/bildzwei.jpg',
+    '/Bilder/bildzwei.jpg',
+    '/Bilder/annehathaway_hover.png', // Hier muss für jedes Bild der entsprechende Pfad eingetragen werden
+];
+
+// Get the container element where images will be appended
+const container = document.getElementById('image-container');
+
+// Loop through the imagePaths array
+imagePaths.forEach((path, index) => {
+    // Create image container div
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container-links', 'bild-container');
+
+    // Create image element
+    const image = document.createElement('img');
+    image.src = path;
+    image.alt = `Image ${index + 1}`;
+    image.classList.add('bild'); 
+
+    const hoverImage = document.createElement('img');
+    hoverImage.src = hoverImagePaths[index]; // Der entsprechende Hover-Bildpfad wird zugewiesen
+    hoverImage.alt = `Hover-Bild ${index + 1}`;
+    hoverImage.classList.add('hoverimagelinks');
+
+
+
+    
+    // Append images to container
+    imageContainer.appendChild(image);
+    imageContainer.appendChild(hoverImage);
+    
+    // Append container to main container
+    container.appendChild(imageContainer);
+});
+
+// Add event listener to container for hover effect using event delegation
+container.addEventListener('mouseover', function(event) {
+    // Check if the mouseover event is triggered by the hover image
+    if (event.target.classList.contains('hoverimagelinks')) {
+        // Apply hover effect by changing opacity
+        event.target.style.opacity = '1';
+    }
+});
+
+// Add event listener to container for mouseout event to revert hover effect
+container.addEventListener('mouseout', function(event) {
+    // Check if the mouseout event is triggered by the hover image
+    if (event.target.classList.contains('hoverimagelinks')) {
+        // Revert hover effect by changing opacity
+        event.target.style.opacity = '0';
+    }
+});
+
+
+
+
 
 
 
