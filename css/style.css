@@ -1,40 +1,32 @@
-body {
-    background-color: pink;
-}
 
-.hanna {
-    display: flex;
-    margin-left: -3.5vw;
-    padding-bottom: 4vw;
-    padding-top: 6vw;
 
+.bildeins,
+.bildzwei,
+.bilddrei {
+    display: inline-block;
+    width: 30%; /* Adjust width as needed */
+    margin: 0%; /* Add space between images */
 }
 
 .image-container-links {
     position: relative;
-    margin-top: 10vw;
-    }
-    
-    .image-container-links img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: opacity 0.5s ease;
-        width: 27.778vw;
-        height: 42.014vw;
-        margin-left: 2.083vw;
-    }
+}
 
-    .hoverimagelinks {
-        opacity: 0;
-    }
-    
-    .image-container-links:hover .hoverimagelinks {
-        opacity: 1;
-    }
+.bildlinkstwo {
+    width: 100%;
+    height: auto;
+}
 
-    .bildlinksone {
-        width: 50.486vw;
-        height: 62.778vw;
-        align-self: flex-end;
-    }
+.hoverimagelinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.image-container-links:hover .hoverimagelinks {
+    opacity: 1;
+}
