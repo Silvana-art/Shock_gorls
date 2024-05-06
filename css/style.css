@@ -1,3 +1,40 @@
 body {
     background-color: pink;
 }
+
+.hanna {
+    display: flex;
+    margin-left: -3.5vw;
+    padding-bottom: 4vw;
+    padding-top: 6vw;
+
+}
+
+.image-container-links {
+    position: relative;
+    margin-top: 10vw;
+    }
+    
+    .image-container-links img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease;
+        width: 27.778vw;
+        height: 42.014vw;
+        margin-left: 2.083vw;
+    }
+
+    .hoverimagelinks {
+        opacity: 0;
+    }
+    
+    .image-container-links:hover .hoverimagelinks {
+        opacity: 1;
+    }
+
+    .bildlinksone {
+        width: 50.486vw;
+        height: 62.778vw;
+        align-self: flex-end;
+    }
