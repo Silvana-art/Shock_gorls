@@ -44,10 +44,12 @@ function createItem(people) {
     let item = document.createElement('div');
     item.classList.add('original_title', 'known_for', 'name');
     item.innerHTML = `
-        <h2>${people.strknown_for}</h2> 
+        <img src="${people.strInstructionsDE}" alt="${people.strknown_for}" class="bild">
+        <h2>${people.strknown_for}</h2>
         <p>${people.strInstructionsDE}</p>`;
     app.appendChild(item);
 }
+
 
 async function fetchData(url) {
     try {
@@ -59,7 +61,6 @@ async function fetchData(url) {
         console.log(error);
     }
 }
-
 
 fetchData(url);
 
