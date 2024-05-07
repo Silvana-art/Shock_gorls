@@ -1,26 +1,30 @@
+const searchBocks = document.querySelector('#searchBocks');
 const app = document.querySelector('#app'); //Konstanten immer oben
+let url = 'https://api.themoviedb.org/3/person/popular?api_key=754711d5f2e577bae7dc53ecdd0d7105';
 
 init();
 async function init() {
-    let url = 'https://api.themoviedb.org/3/discover/movie';
+    let url = 'https://api.themoviedb.org/3/person/popular?language=en-US&page=1'
     let movies = await fetchData(url);
+    console.log(movies.results[0].known_for[0].title);
+    // console.log(movies.results[0].known_for[0].original_title);
 
     // console.log(movies.results[0].original_title);
 
     movies.results.forEach(movie => {
-        createMovies(movie);});
+        createItem(movie);});
 }
 
-// function createMovies(movie) {
-//     app.innerHTML += `
-//     <div class="movie">
-//         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.original_title}">
-//         <h2>${movie.original_title}</h2>
-//         <p>${movie.overview}</p>
-//     </div>
-//     `;
+function createIten(movie) {
+    app.innerHTML = `
+    <div class="movie">
+        <h2>${results.known_for.title}</h2>
+        <p>${results.known_for.name}</p>
+        <p>${results.known_for.original_title}</p>
+    </div>
+    `;
 
-// }
+}
 
 async function search() {
     let searchValue = searchBocks.value;
@@ -31,6 +35,83 @@ async function search() {
         createItem(actor);
     });
 }
+
+searchBocks.addEventListener('input', search);
+
+
+//Werkzeugkasten von Funktionen
+function createItem(people) {
+    let item = document.createElement('div');
+    item.classList.add('original_title', 'known_for', 'name');
+    item.innerHTML = `
+        <h2>${people.strknown_for}</h2> 
+        <p>${people.strInstructionsDE}</p>`;
+    app.appendChild(item);
+}
+
+async function fetchData(url) {
+    try {
+        let response = await fetch(url);
+        let data = await response.json();
+        return data;
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+
+fetchData(url);
+
+
+
+
+// async function Init() {
+//     let people = await fetchData(url);
+//     console.log(people.known_for[0].strknown_for);
+
+//     people.known_for.forEach(people => {
+//         createItem(people);
+//     });
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Array of image paths
