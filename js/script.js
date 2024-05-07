@@ -3,19 +3,6 @@ const searchBocks = document.querySelector('#searchBocks');
 const app = document.querySelector('#app'); //Konstanten immer oben
 let url = 'https://api.themoviedb.org/3/person/popular?api_key=754711d5f2e577bae7dc53ecdd0d7105';
 
-import urllib.parse
-
-base_url = "https://api.themoviedb.org/3/search/person?"
-api_key = "754711d5f2e577bae7dc53ecdd0d7105"
-
-def generate_url(actors):
-    query_params = {'api_key': api_key, 'query': ','.join(actors)}
-    return base_url + urllib.parse.urlencode(query_params)
-
-actors = ["Depp"]
-url = generate_url(actors)
-print(url)
-
 init();
 async function init() {
     let url = 'https://api.themoviedb.org/3/person/popular?language=en-US&page=1'
