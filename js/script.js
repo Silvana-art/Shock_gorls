@@ -1,6 +1,7 @@
 
 const searchBocks = document.querySelector('#searchBocks');
-const app = document.querySelector('#app'); //Konstanten immer oben
+const app = document.querySelector('#app'); 
+ //Konstanten immer oben
 let url = 'https://api.themoviedb.org/3/person/popular?api_key=754711d5f2e577bae7dc53ecdd0d7105';
 
 init();
