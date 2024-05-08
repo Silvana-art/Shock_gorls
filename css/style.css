@@ -1,32 +1,27 @@
-
-
-.bild-container {
+.image-container {
     display: inline-block;
-    width: 30%; /* Adjust width as needed */
+    width: 10%; /* Adjust width as needed */
     margin: 0%; /* Add space between images */
+    position: relative; /* Ensure relative positioning for absolute positioning of hover images */
 }
 
-.image-container-links {
-    position: relative;
-}
-
-.bild {
+.image-container img{
     width: 100%;
     height: auto;
 }
 
-.hoverimagelinks {
+.hoverimage {
+    display: none; /* Initially hide the hover image */
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make hover image same width as container */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure hover image appears above other content */
 }
 
-.image-container-links:hover .hoverimagelinks {
-    opacity: 1;
+.image-container:hover .hoverimage {
+    display: block; /* Show hover image on hover */
 }
 
 
