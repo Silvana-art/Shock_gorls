@@ -112,7 +112,101 @@ fetchData(url);
 
 
 
+const actors = [
+    {
+        name: 'Anne Hathaway',
+        image: '/Bilder/annehathaway.png',
+        hoverImage: '/Bilder/annehathaway_hover.png',
+    },
+    {
+        name: 'Jason Statham',
+        image: '/Bilder/jason.png',
+        hoverImage: '/Bilder/jason_hover.png',
+    },
+    {
+        name: 'Scarlett Johansson',
+        image: '/Bilder/scarlettjohansson.png',
+        hoverImage: '/Bilder/scarlettjohansson_hover.png',
+    }
+    {
+        name: 'Tom Hanks',
+        image: '/Bilder/tomhanks.png',
+        hoverImage: '/Bilder/tomhanks_hover.png',
+    }
+    {
+        name: 'Morgan Freeman',
+        image: '/Bilder/morganfreeman.png',
+        hoverImage: '/Bilder/morganfreeman_hover.png',
+    }
+    {
+        name: 'Mark Wahlberg',
+        image: '/Bilder/markwahlberg.png',
+        hoverImage: '/Bilder/markwahlberg_hover.png',
+    }
+    {
+        name: 'Jackie Chan',
+        image: '/Bilder/jackiechan.png',
+        hoverImage: '/Bilder/jackiechan_hover.png',
+    }
+    {
+        name: 'Ryan Reynolds',
+        image: '/Bilder/ryanreynolds.png',
+        hoverImage: '/Bilder/ryanreynolds_hover.png',
+    }
+    
+    
+];
 
+1. Anne Hathaway
+2. jason statham
+3. scarlett johansson
+4. tom hanks
+5. morgan freeman
+6. mark wahlberg
+7. jackie chan
+8. ryan reynolds
+9. keanu reeves
+10. clint eastwood
+11. timothee chalamet
+12. arnold schwarzenegger
+13. halle berry
+14. denzel washington
+15. robert downey jr
+16. emily blunt
+17. jake gyllenhaal
+18. bruce willis
+19. nicole kidman
+20. russell crowe
+21. gina gershon
+22. robert de niro
+23. ethan hawke
+24. kristen stewart
+25. rosamund pike
+26. kevin hart
+27. uma thurman
+28. john goodman
+29. jack black
+30. angelina jolie
+31. bryan cranston
+32. sylvester stallone
+33. ana de armas
+34. alexandra daddario
+35. nicolas cage
+36. liam neeson
+37. gal gadot
+38. millie bobby brown
+39. jenna ortega
+40. johnny depp
+41. matt damon
+42. harrison ford
+43. florence pugh
+44. emma stone
+45. jason momoa
+46. anna sawai
+47. nava mau
+48. ella purnell
+49. jessica gunning
+50. eva green
 
 
 
@@ -156,9 +250,17 @@ imagePaths.forEach((path, index) => {
     // Append images to container
     imageContainer.appendChild(image);
     imageContainer.appendChild(hoverImage);
+
+    imageContainer.addEventListener('mouseover', function(event) {
+        // Check if the mouseover event is triggered by the hover image
+        console.log('hover on image')
+    });
     
     // Append container to main container
     container.appendChild(imageContainer);
+
+
+
 });
 
 // Add event listener to container for hover effect using event delegation
