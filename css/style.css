@@ -1,3 +1,25 @@
+
+.suche {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchBocks {
+    width: 50%; /* Adjust width as needed */
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .image-container {
     display: inline-block;
     width: 10%; /* Adjust width as needed */
@@ -5,7 +27,7 @@
     position: relative; /* Ensure relative positioning for absolute positioning of hover images */
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
     height: auto;
 }
@@ -24,4 +46,89 @@
     display: block; /* Show hover image on hover */
 }
 
+.name-overlay {
+    display: none; /* Initially hide the name overlay */
+    position: absolute;
+    bottom: 10%; /* Adjust as needed for positioning */
+    left: 0;
+    width: 100%; /* Make name overlay same width as container */
+    text-align: center; /* Center text */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    color: rgb(38, 254, 0); /* Text color */
+    padding: 7px; /* Padding for text */
+    font-size: 1.3vw; /* Adjust font size as needed */
+    box-sizing: border-box; /* Include padding in width */
+    border-radius: 40px;
+    z-index: 2; /* Ensure overlay appears above other content */
+}
 
+.image-container:hover .name-overlay {
+    display: block; /* Show name overlay on hover */
+}
+
+#actorImage {
+    width: 15vw;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#movieList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.movie-item {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 3% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 3vw;
+    margin: 2%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
