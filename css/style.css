@@ -54,7 +54,7 @@
     width: 100%; /* Make name overlay same width as container */
     text-align: center; /* Center text */
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: rgb(38, 254, 0); /* Text color */
+    color: rgb(254, 0, 0); /* Text color */
     padding: 7px; /* Padding for text */
     font-size: 1.3vw; /* Adjust font size as needed */
     box-sizing: border-box; /* Include padding in width */
@@ -132,3 +132,8 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+body {
+    background-color: blue;
+}
+

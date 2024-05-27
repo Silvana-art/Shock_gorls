@@ -300,3 +300,7 @@ async function showMovies(actor) {
         }
     };
 }
+
+document.body.style.backgroundColor = "blue";
+
+
