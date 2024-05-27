@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../startseite/startseite.css">
-    <link rel="stylesheet" href="../startseite/startseite.js">
+    <script src="../startseite/startseite.css"></script>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-    <link href="../index.html">
 
+    
     <style>
         body {
             font-family: 'Audiowide', cursive;
@@ -44,12 +44,12 @@
                     menu.style.opacity = '0';
                     setTimeout(() => {
                         menu.style.display = 'none';
-                    }, 500); // Übergangszeit in Millisekunden
+                    }, 500); 
                 } else {
                     menu.style.display = 'block';
                     setTimeout(() => {
                         menu.style.opacity = '1';
-                    }, 10); // Kurze Verzögerung um den Übergang zu starten
+                    }, 10); 
                 }
             });
         });
