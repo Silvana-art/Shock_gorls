@@ -66,6 +66,7 @@
     width: 10%; /* Adjust width as needed */
     margin: 0%; /* Add space between images */
     position: relative; /* Ensure relative positioning for absolute positioning of hover images */
+    cursor: pointer;
 }
 
 .image-container img {
@@ -182,6 +183,7 @@
 #app {
     margin-top: 2vw;
 }
+
 
 
 
