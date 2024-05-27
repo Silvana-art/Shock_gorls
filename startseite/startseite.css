@@ -1,0 +1,40 @@
+body {
+    background-image: url(../Bilder/Background/Untitled_Artwork.png);
+    background-size: cover;
+}
+
+.titel {
+    margin-top: 15%;
+    text-align: center;
+    color: white; 
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 200%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #ffffff; 
+    color: black; 
+    padding: 15px 30px; 
+    margin: 10px; 
+    border: 2px solid black; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    font-size: 1.5em; 
+    font-family: 'Audiowide', cursive; 
+    letter-spacing: 3px; 
+}
