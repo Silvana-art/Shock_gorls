@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 #searchBocks {
@@ -54,7 +55,7 @@
     width: 100%; /* Make name overlay same width as container */
     text-align: center; /* Center text */
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: rgb(254, 0, 0); /* Text color */
+    color: rgb(255, 255, 255); /* Text color */
     padding: 7px; /* Padding for text */
     font-size: 1.3vw; /* Adjust font size as needed */
     box-sizing: border-box; /* Include padding in width */
@@ -84,7 +85,7 @@
 }
 
 .movie-item {
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -106,7 +107,7 @@
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #d01212ed;
     margin: 3% auto; /* 3% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -133,12 +134,11 @@
     cursor: pointer;
 }
 
-body {
-    background-color: blue;
-}
+
 
 #app {
     margin-top: 2vw;
 }
+
 
 
