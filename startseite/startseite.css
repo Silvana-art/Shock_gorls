@@ -27,7 +27,7 @@ body {
 }
 
 .burgerbutton:hover + .menu {
-    display: block; /* Zeigt das Menü an, wenn man über das Icon hovered */
+    display: block; 
 }
 
 .titel {
