@@ -28,7 +28,7 @@
 }
 
 .image-container img {
-    width: 100%;
+    width: 140%;
     height: auto;
 }
 
@@ -37,7 +37,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Make hover image same width as container */
+    width: 140%; /* Make hover image same width as container */
     height: auto; /* Maintain aspect ratio */
     z-index: 1; /* Ensure hover image appears above other content */
 }
@@ -54,7 +54,7 @@
     width: 100%; /* Make name overlay same width as container */
     text-align: center; /* Center text */
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: rgb(38, 254, 0); /* Text color */
+    color: rgb(254, 0, 0); /* Text color */
     padding: 7px; /* Padding for text */
     font-size: 1.3vw; /* Adjust font size as needed */
     box-sizing: border-box; /* Include padding in width */
@@ -132,3 +132,12 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+body {
+    background-color: blue;
+}
+
+#app {
+    margin-top: 2vw;
+}
+

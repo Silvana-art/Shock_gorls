@@ -4,7 +4,7 @@ body {
 }
 
 .bilderuns img {
-    width: 90%; /* Setzt die Breite der Bilder auf 50% der ursprünglichen Größe */
+    width: 100%; /* Setzt die Breite der Bilder auf 50% der ursprünglichen Größe */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
 }
 
@@ -13,14 +13,16 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 12vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: white;
+    padding-right: 5vw;
+    font-style: italic;
 }
 
 h2 {
-    font-size: 500%;
+    font-size: 5vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: white;
@@ -33,6 +35,18 @@ h2 {
 .action {
     display: flex;
 }
+
+.titel {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    height: 100vh; /* Vollständige Höhe des Viewports */
+}
+
+.titel h2 {
+    text-align: center; /* Zentriert den Text horizontal */
+}
+
 
 
 
@@ -49,32 +63,66 @@ h2 {
     }
 }
 
+@keyframes fly-out {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Nur Behind the scenes */
+.titel h2 {
+    text-align: center;
+    animation: fly-in 1s ease forwards;
+}
+
+/* Zahlen und "action" */
 .action h1 {
     display: inline-block;
-    animation: fly-in 1s ease forwards;
+    animation: fly-in 0.5s ease forwards; /* Ändern Sie die Dauer auf 0.5 Sekunden */
     opacity: 0;
 }
 
 .action h1:nth-child(1) {
-    animation-delay: 0s;
+    animation-delay: 1s; /* Verzögerung von 1 Sekunde */
 }
 
 .action h1:nth-child(2) {
-    animation-delay: 0.5s;
+    animation-delay: 1.3s; /* Verzögerung von 1.3 Sekunden */
 }
 
 .action h1:nth-child(3) {
-    animation-delay: 1s;
+    animation-delay: 1.6s; /* Verzögerung von 1.6 Sekunden */
 }
 
 .action h1:nth-child(4) {
-    animation-delay: 1.5s;
+    animation-delay: 1.9s; /* Verzögerung von 1.9 Sekunden */
 }
 
-.bilderuns {
-    opacity: 0; /* Starten Sie mit verborgenen Bildern */
-    transition: opacity 1s ease-in-out;
+/* Animation für das Verschwinden von "Behind the scenes" */
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
+/* Animation für das Verschwinden von "Behind the scenes" */
+.titel h2 {
+    animation: fade-out 1s ease forwards;
+    animation-delay: 1s; /* Verzögerung von 1 Sekunde */
+}
+
 
 /* Animation*/
 
