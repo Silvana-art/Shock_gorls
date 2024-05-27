@@ -23,9 +23,10 @@ h1 {
 
 h2 {
     font-size: 5vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
     color: white;
+    line-height: 4vw;
+    margin-bottom: 0vw;
+    margin-top: 0.5vw;
 }
 
 .namestitel {
@@ -36,16 +37,7 @@ h2 {
     display: flex;
 }
 
-.titel {
-    display: flex;
-    justify-content: center; /* Zentriert horizontal */
-    align-items: center; /* Zentriert vertikal */
-    height: 100vh; /* Vollständige Höhe des Viewports */
-}
 
-.titel h2 {
-    text-align: center; /* Zentriert den Text horizontal */
-}
 
 
 
@@ -79,12 +71,26 @@ h2 {
 }
 
 /* Nur Behind the scenes */
+.titel {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    overflow: hidden; /* Versteckt den Überlauf */
+}
+
+/* Nur Behind the scenes */
 .titel h2 {
     text-align: center;
     animation: fly-in 1s ease forwards;
 }
 
+
 /* Zahlen und "action" */
+.action {
+    display: flex;
+    justify-content: center; /* Zentriert vertikal */
+    align-items: center; /* Zentriert horizontal */
+}
+
 .action h1 {
     display: inline-block;
     animation: fly-in 0.5s ease forwards; /* Ändern Sie die Dauer auf 0.5 Sekunden */
@@ -107,22 +113,12 @@ h2 {
     animation-delay: 1.9s; /* Verzögerung von 1.9 Sekunden */
 }
 
-/* Animation für das Verschwinden von "Behind the scenes" */
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* Animation für das Verschwinden von "Behind the scenes" */
-.titel h2 {
-    animation: fade-out 1s ease forwards;
-    animation-delay: 1s; /* Verzögerung von 1 Sekunde */
-}
 
 
-/* Animation*/
+
+
+
+
+
+
 
