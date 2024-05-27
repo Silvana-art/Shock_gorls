@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ueberuns/ueberuns.css">
+    <link rel="stylesheet" href="../ueberuns/ueberuns.css">
+    <script src="../ueberuns/ueberuns.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <!-- <link rel="icon" type="image/png" href="pfad/zum/favicon.png"> -->
+
 
     <style>
         body {
             font-family: 'Audiowide', cursive;
-            font-size: 22px;
-            text-transform: uppercase;
         }
     </style>
 
@@ -34,25 +35,26 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var burgerButton = document.getElementById('burgerbutton');
             var menu = document.getElementById('menu');
 
-            burgerButton.addEventListener('click', function() {
+            burgerButton.addEventListener('click', function () {
                 if (menu.style.display === 'block') {
                     menu.style.opacity = '0';
                     setTimeout(() => {
                         menu.style.display = 'none';
-                    }, 500); 
+                    }, 500);
                 } else {
                     menu.style.display = 'block';
                     setTimeout(() => {
                         menu.style.opacity = '1';
-                    }, 10); 
+                    }, 10);
                 }
             });
         });
     </script>
+
 
     <div class="titel">
 
@@ -66,72 +68,61 @@
         <h1 class="eins">1</h1>
         <h1 class="am">action</h1>
     </div>
-</body>
-
-</html>
 
 
+    <div class="bilderuns">
+        <div class="luana">
+            <img class="bildnormal" src="/Bilder/luanaalleine.png" alt="Teammitglied 1: Luana Donghi">
+            <img class="bildhover" src="/Bilder/luanatext.png" alt="luanatext">
+        </div>
 
 
+        <div class="hanna">
+            <img class="bildnormal" src="/Bilder/hannaalleine.png" alt="Teammitglied 2: Hanna Zsakai">
+            <img class="bildhover" src="/Bilder/hannatext.png" alt="hannatext">
+        </div>
 
-<div class="bilderuns">
-    <div class="luana">
-        <img class="bildnormal" src="/Bilder/luanaalleine.png" alt="Teammitglied 1: Luana Donghi">
-        <img class="bildhover" src="/Bilder/luanatext.png" alt="luanatext">
+        <div>
+            <img class="bildnormal" src="/Bilder/silvanaalleine.png" alt="Teammitglied 3: Silvana Waser">
+            <img class="bildhover" src="/Bilder/silvanatext.png" alt="silvanatext">
+        </div>
     </div>
 
 
-    <div class="hanna">
-        <img class="bildnormal" src="/Bilder/hannaalleine.png" alt="Teammitglied 2: Hanna Zsakai">
-        <img class="bildhover" src="/Bilder/hannatext.png" alt="hannatext">
+    <img class=spule src="/Bilder/filmspule.png" alt="">
+
+
+    <div class="beschrieb">
+        <div>
+            <p class="kamera">
+                Buttercup <br>
+                Kamera <br>
+                Luana hat mit ihren powerpuff fähigkeiten unsere hauptseite designt.
+                Der Aufbau der Webseite haben wir im Team gemacht.
+
+            </p>
+        </div>
+
+        <div>
+            <p class="beschriebtitel">
+                Bubbles
+            </p>
+            <p class="ton"> To <br>
+                Hanna designte unsere tolle Startseite. Ohne sie würde unsere Webseite jetzt noch ohne burgemenü
+                existieren </p>
+        </div>
+
+        <div>
+            <p class="schnitt">
+                Blossom <br>
+                Schnitt <br>
+                Silvana kreierte die Behind the scenes seite. Diese Seite gibt etwas pepp in die ganze Webseite.
+            </p>
+        </div>
     </div>
 
-    <div>
-        <img class="bildnormal" src="/Bilder/silvanaalleine.png" alt="Teammitglied 3: Silvana Waser">
-        <img class="bildhover" src="/Bilder/silvanatext.png" alt="silvanatext">
-    </div>
-</div>
+    <script src="/js/script.js"></script>
 
-
-<img class=spule src="/Bilder/filmspule.png" alt="">
-
-
-<div class="beschrieb">
-    <div>
-        <p class="kamera">
-            Buttercup <br>
-            Kamera <br>
-            Luana hat mit ihren powerpuff fähigkeiten unsere hauptseite designt.
-            Der Aufbau der Webseite haben wir im Team gemacht.
-
-        </p>
-    </div>
-
-    <div>
-        <p class="beschriebtitel">
-            Bubbles
-        </p>
-        <p class="ton"> To <br>
-        Hanna designte unsere tolle Startseite. Ohne sie würde unsere Webseite jetzt noch ohne burgemenü existieren </p>
-    </div>
-
-    <div>
-        <p class="schnitt">
-            Blossom <br>
-            Schnitt <br>
-            Silvana kreierte die Behind the scenes seite. Diese Seite gibt etwas pepp in die ganze Webseite.
-        </p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<script src="/ueberuns/ueberuns.js"></script>
 </body>
 
 </html>

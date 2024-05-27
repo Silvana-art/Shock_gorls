@@ -25,12 +25,13 @@ body {
 
 #burgerbutton:hover {
         transform: scale(1.1); 
-        opacity: 0.8; /* Setzt eine leicht transparente Schrift */
+        opacity: 0.8; 
     }
 
 #menu {
     color: white;
     font-size: 1.2em;
+    text-decoration: none; 
     opacity: 0; 
     transition: opacity 1s ease; 
     position: absolute;
@@ -38,13 +39,17 @@ body {
     top: 0;
     padding-right: 5%;
     z-index: 0; 
-    display: none; 
     text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
 }
 
+.show-menu {
+    display: block;
+    opacity: 1;
+}
+
 .bilderuns img {
-    width: 100%; /* Setzt die Breite der Bilder auf 50% der ursprünglichen Größe */
-    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    width: 100%; 
+    height: auto; 
 }
 
 .bilderuns {
@@ -59,6 +64,7 @@ h1 {
     padding-right: 2vw;
     padding-left: 2vw;
     font-style: italic;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -67,6 +73,7 @@ h2 {
     line-height: 4vw;
     margin-bottom: 0vw;
     margin-top: 0.5vw;
+    text-transform: uppercase;
 }
 
 .namestitel {
@@ -255,4 +262,8 @@ p.beschriebtitel {
     color: violet;
 }
 
+#menu {
+    display: none;
+    /* Restliche Stile */
+}
 
