@@ -36,11 +36,21 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var burgerbutton = document.getElementById('burgerbutton');
+            var burgerButton = document.getElementById('burgerbutton');
             var menu = document.getElementById('menu');
-        
-            burgerbutton.addEventListener('click', function() {
-                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+            burgerButton.addEventListener('click', function() {
+                if (menu.style.display === 'block') {
+                    menu.style.opacity = '0';
+                    setTimeout(() => {
+                        menu.style.display = 'none';
+                    }, 500); // Übergangszeit in Millisekunden
+                } else {
+                    menu.style.display = 'block';
+                    setTimeout(() => {
+                        menu.style.opacity = '1';
+                    }, 10); // Kurze Verzögerung um den Übergang zu starten
+                }
             });
         });
     </script>
