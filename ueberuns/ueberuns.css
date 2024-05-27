@@ -17,7 +17,8 @@ h1 {
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: white;
-    padding-right: 5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
     font-style: italic;
 }
 
@@ -37,9 +38,22 @@ h2 {
     display: flex;
 }
 
+/* Farbgebung für die Klassen .drei und .zwei */
+.drei {
+    color: #52cf21
+}
 
+.zwei {
+    color: #93e7ea
+}
 
+.eins {
+    color: #fab2fd
+}
 
+.am {
+    color: rgb(255, 255, 146) !important; /* Farbcode für "action" */
+}
 
 
 /* Animation */
@@ -75,14 +89,18 @@ h2 {
     display: flex;
     justify-content: center; /* Zentriert horizontal */
     overflow: hidden; /* Versteckt den Überlauf */
+    padding-bottom: 5vw;
 }
 
 /* Nur Behind the scenes */
 .titel h2 {
     text-align: center;
     animation: fly-in 1s ease forwards;
-}
+    /* Dreidimensionaler Text */
+    text-shadow: 0.5vw 0.5vw 2vw rgb(255, 252, 160); /* Schatten für Tiefe */
+    transform: perspective(100px) rotateY(20deg); /* 3D-Transformation für die Perspektive */
 
+}
 
 /* Zahlen und "action" */
 .action {
@@ -113,12 +131,89 @@ h2 {
     animation-delay: 1.9s; /* Verzögerung von 1.9 Sekunden */
 }
 
+.bilderuns {
+    display: flex; /* Added to arrange images in a row */
+}
+
+.bilderuns > div {
+    position: relative;
+    width: fit-content; /* Ensure the container fits the content */
+}
+
+.bilderuns .bildnormal {
+    display: block;
+    width: 100%; /* Anpassung je nach gewünschter Größe */
+    height: auto; /* Anpassung je nach gewünschter Größe */
+}
+
+.bilderuns .bildhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Anpassung je nach gewünschter Größe */
+    height: auto; /* Anpassung je nach gewünschter Größe */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bilderuns > div:hover .bildhover {
+    opacity: 1;
+}
 
 
+/* Positionierung des Bildes oben links */
 
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spule {
+    position: fixed; /* Positionierung relativ zum Viewport */
+    top: 2vw; /* Abstand vom oberen Rand */
+    left: 2vw; /* Abstand vom linken Rand */
+    width: 10vw;
+    animation: rotate 5s linear infinite;
+}
 
+p {
+    color: white;
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
 
+.beschrieb {
+    display: flex;
+}
 
+p {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 3vw;
+}
 
+.beschrieb {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+}
+
+.beschrieb {
+    width: 40%;
+}
+
+.beschrieb p {
+    margin: 0;
+}
+p.kamera {
+    margin-right: 12vw;
+}
+p.ton {
+    margin-right: 16vw;
+}
+
+p.beschriebtitel {
+    color: violet;
+}
 
 
