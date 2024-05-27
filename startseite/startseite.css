@@ -3,49 +3,73 @@ body {
     background-size: cover;
 }
 
-.burgerbutton {
+.menu-container {
     display: flex;
-    justify-content: right;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative; 
+}
+
+#burgerbutton {
     margin-top: 2%;
     margin-right: 1%;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
+    z-index: 1; 
 }
 
-.burgerbutton img {
-    transform: scaleX(-1); 
-    width: 5%;
-    height: 45%;
+#burgerbutton img {
+    transform: scaleX(-1);
+    width: 50px; 
+    height: auto;
 }
 
-.menu {
+#burgerbutton:hover {
+        transform: scale(1.1); 
+        opacity: 0.8; /* Setzt eine leicht transparente Schrift */
+    }
+
+#menu {
+    color: white;
+    font-size: 1.2em;
+    opacity: 0; 
+    transition: opacity 1s ease; 
+    position: absolute;
+    right: 60px; 
+    top: 0;
+    padding-right: 5%;
+    z-index: 0; 
     display: none; 
-    position: absolute; 
-    right: 0; 
-    background-color: white; 
-    border: 1px solid #ccc; 
-    padding: 10px; 
-}
-
-.burgerbutton:hover + .menu {
-    display: block; /* Zeigt das Menü an, wenn man über das Icon hovered */
+    text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
 }
 
 .titel {
-    margin-top: 10%;
+    margin-top: 2%;
     text-align: center;
-    color: white; 
+    color: white;
+    overflow: hidden; 
+}
+
+h1, h2 {
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slide-in 1s forwards; 
 }
 
 h1 {
-    font-size: 500%;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    animation-delay: 0.5s; 
+    font-size: 5em;
 }
 
 h2 {
-    font-size: 200%;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    animation-delay: 2s; 
+    font-size: 3em;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
 }
 
 .button {
@@ -65,8 +89,25 @@ button {
     font-family: 'Audiowide';
     letter-spacing: 3px;
     width: 200px; 
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slide-in 2s forwards; 
+    animation-delay: 3.5s; 
 }
 
 button:hover {
-    opacity: 0.8;
+    transform: scale(1.1);
+    background-color: black; 
+    color: #fff; 
+    opacity: 0.8; 
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: inherit; 
+    text-decoration: underline; 
 }

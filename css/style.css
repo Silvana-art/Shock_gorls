@@ -1,10 +1,12 @@
 
 .suche {
+    /* background-image: url(../Bilder/filmrolle.jpg); */
     display: flex;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: rgb(255, 255, 255);
 }
 
 #searchBocks {
@@ -54,7 +56,7 @@
     width: 100%; /* Make name overlay same width as container */
     text-align: center; /* Center text */
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: rgb(254, 0, 0); /* Text color */
+    color: rgb(255, 255, 255); /* Text color */
     padding: 7px; /* Padding for text */
     font-size: 1.3vw; /* Adjust font size as needed */
     box-sizing: border-box; /* Include padding in width */
@@ -71,8 +73,10 @@
     height: auto;
     display: block;
     margin: 0 auto 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 20px rgb(255, 254, 254);
+    background-color: #ffffff; /* Set the background color to white */
+    padding: 10px; /* Add some padding */
 }
 
 #movieList {
@@ -84,11 +88,11 @@
 }
 
 .movie-item {
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 /* Modal styles */
@@ -106,7 +110,7 @@
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #d01212;
     margin: 3% auto; /* 3% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -133,12 +137,11 @@
     cursor: pointer;
 }
 
-body {
-    background-color: blue;
-}
+
 
 #app {
     margin-top: 2vw;
 }
+
 
 
