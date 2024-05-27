@@ -100,9 +100,9 @@ const actors = [
         hoverImage: '/Bilder/Mainpage/raw/liamneeson_raw.png'
     },
     {
-        name: 'Marry Shelley',
-        image: '/Bilder/Mainpage/3D/maryshelley_3D.png',
-        hoverImage: '/Bilder/Mainpage/raw/maryshelley_raw.png'
+        name: 'Ana de Armas',
+        image: '/Bilder/Mainpage/3D/anadearmas_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/anadearmas_raw.png'
     },
     {
         name: 'Matt Damon',
