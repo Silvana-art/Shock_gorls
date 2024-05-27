@@ -28,25 +28,30 @@ body {
         opacity: 0.8; 
     }
 
-#menu {
-    color: white;
-    font-size: 1.2em;
-    text-decoration: none; 
-    opacity: 0; 
-    transition: opacity 1s ease; 
-    position: absolute;
-    right: 60px; 
-    top: 0;
-    padding-right: 5%;
-    z-index: 0; 
-    text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
+    #menu {
+        color: white;
+        font-size: 1.2em;
+        opacity: 0; 
+        transition: opacity 1s ease; 
+        position: absolute;
+        right: 60px; 
+        top: 0;
+        padding-right: 5%;
+        z-index: 100; 
+        display: none; 
+        text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
+    }
+    
+    #menu a {
+        color: white;  
+        text-decoration: none;  
+    }
+    
+    
+#menu a:hover {
+    text-decoration: underline;  
 }
-
-.show-menu {
-    display: block;
-    opacity: 1;
-}
-
+    
 .bilderuns img {
     width: 100%; 
     height: auto; 
@@ -84,7 +89,6 @@ h2 {
     display: flex;
 }
 
-/* Farbgebung für die Klassen .drei und .zwei */
 .drei {
     color: #52cf21
 }
@@ -98,7 +102,7 @@ h2 {
 }
 
 .am {
-    color: rgb(255, 255, 146) !important; /* Farbcode für "action" */
+    color: rgb(255, 255, 146) !important; 
 }
 
 
@@ -230,40 +234,25 @@ p {
 
 .beschrieb {
     display: flex;
-}
-
-p {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: 3vw;
-}
-
-.beschrieb {
-    display: flex;
     justify-content: space-around;
-    padding: 2vw;
+    padding: 5vw;
 }
 
-.beschrieb {
-    width: 40%;
-}
-
-.beschrieb p {
-    margin: 0;
-}
 p.kamera {
-    margin-right: 12vw;
+text-align: center;
+align-self: left;
+margin-left: 1vw;
 }
+
 p.ton {
-    margin-right: 16vw;
+    text-align: center;
+    align-self: center;
+    margin-left: 12vw;
 }
 
-p.beschriebtitel {
-    color: violet;
-}
-
-#menu {
-    display: none;
-    /* Restliche Stile */
+p.schnitt {
+    text-align: center;
+    align-self: right;
+    margin-left: 12vw;
 }
 
