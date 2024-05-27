@@ -182,7 +182,31 @@
 
 #app {
     margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5vw;
 }
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+}
+
+.image-container {
+    flex: 1 1 200px; /* Flex-Grow, Flex-Shrink, Basisgröße */
+    max-width: 200px; /* Maximale Breite für jedes Bild */
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
