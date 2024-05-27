@@ -102,6 +102,7 @@
     box-sizing: border-box; /* Include padding in width */
     border-radius: 40px;
     z-index: 2; /* Ensure overlay appears above other content */
+      
 }
 
 .image-container:hover .name-overlay {
