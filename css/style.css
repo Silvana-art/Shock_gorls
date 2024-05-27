@@ -28,7 +28,7 @@
 }
 
 .image-container img {
-    width: 100%;
+    width: 140%;
     height: auto;
 }
 
@@ -37,7 +37,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Make hover image same width as container */
+    width: 140%; /* Make hover image same width as container */
     height: auto; /* Maintain aspect ratio */
     z-index: 1; /* Ensure hover image appears above other content */
 }
@@ -135,5 +135,9 @@
 
 body {
     background-color: blue;
+}
+
+#app {
+    margin-top: 2vw;
 }
 
