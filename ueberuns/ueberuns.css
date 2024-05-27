@@ -1,6 +1,7 @@
 body {
     background-image: url(../Bilder/Background/Untitled_Artwork.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .menu-container {
@@ -11,10 +12,11 @@ body {
 }
 
 #burgerbutton {
-    margin-top: 2%;
+    position: fixed;
+    z-index: 101; /* Stellen Sie sicher, dass dieser Wert höher ist als der des Menüs */
+    margin-top: 7%;
     margin-right: 1%;
     transition: transform 1s ease;
-    z-index: 1; 
 }
 
 #burgerbutton img {
@@ -28,25 +30,28 @@ body {
         opacity: 0.8; 
     }
 
-    #menu {
-        color: white;
-        font-size: 1.2em;
-        opacity: 0; 
-        transition: opacity 1s ease; 
-        position: absolute;
-        right: 60px; 
-        top: 0;
-        padding-right: 5%;
-        z-index: 100; 
-        display: none; 
-        text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
-    }
+#menu {
+    color: white;
+    font-size: 1.2em;
+    opacity: 0; 
+    transition: opacity 1s ease; 
+    position: fixed;
+    top: 0;
+    padding-right: 5em;
+    z-index: 100; 
+    text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
+}
+
+#menu.show-menu {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
     
-    #menu a {
-        color: white;  
-        text-decoration: none;  
-    }
-    
+#menu a {
+    color: white;  
+    text-decoration: none;  
+}   
     
 #menu a:hover {
     text-decoration: underline;  
@@ -140,6 +145,17 @@ h2 {
     justify-content: center; /* Zentriert horizontal */
     overflow: hidden; /* Versteckt den Überlauf */
     padding-bottom: 5vw;
+    opacity: 0;
+    transform: translateX(-100%); 
+    animation: slide-in 1s forwards; 
+    
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
 }
 
 /* Nur Behind the scenes */
@@ -147,7 +163,7 @@ h2 {
     text-align: center;
     animation: fly-in 1s ease forwards;
     /* Dreidimensionaler Text */
-    text-shadow: 0.5vw 0.5vw 2vw rgb(255, 252, 160); /* Schatten für Tiefe */
+    /*text-shadow: 0.5vw 0.5vw 2vw rgb(255, 252, 160); /* Schatten für Tiefe */
     transform: perspective(100px) rotateY(20deg); /* 3D-Transformation für die Perspektive */
 
 }
@@ -217,13 +233,14 @@ h2 {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.spule {
-    position: fixed; /* Positionierung relativ zum Viewport */
-    top: 2vw; /* Abstand vom oberen Rand */
-    left: 2vw; /* Abstand vom linken Rand */
+/*.spule {
+    position: fixed; 
+    top: 2vw; 
+    left: 2vw; 
     width: 10vw;
     animation: rotate 5s linear infinite;
 }
+*/
 
 p {
     color: white;
@@ -241,18 +258,21 @@ p {
 p.kamera {
 text-align: center;
 align-self: left;
-margin-left: 1vw;
+margin-left: -2vw;
+color: #52cf21
 }
 
 p.ton {
     text-align: center;
     align-self: center;
     margin-left: 12vw;
+    color: #93e7ea
 }
 
 p.schnitt {
     text-align: center;
     align-self: right;
     margin-left: 12vw;
+    color: #fab2fd
 }
 

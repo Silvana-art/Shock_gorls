@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shock_gorls</title>
     <link rel="stylesheet" href="/css/style.css">
+    
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
 
     <style>
         body {
             font-family: 'Audiowide', cursive;
-            font-size: 22px;
-            text-transform: uppercase;
         }
     </style>
 
@@ -20,26 +19,18 @@
 
 <body>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var burgerButton = document.getElementById('burgerbutton');
-            var menu = document.getElementById('menu');
-
-            burgerButton.addEventListener('click', function () {
-                if (menu.style.display === 'block') {
-                    menu.style.opacity = '0';
-                    setTimeout(() => {
-                        menu.style.display = 'none';
-                    }, 500);
-                } else {
-                    menu.style.display = 'block';
-                    setTimeout(() => {
-                        menu.style.opacity = '1';
-                    }, 10);
-                }
-            });
-        });
-    </script>
+    <div class="menu-container">
+        <div id="menu" style="display: none;">
+            <ul>
+                <li><a href="../startseite/startseite.html">Intro</a></li>
+                <li><a href="../index.html">Cast</a></li>
+                <li><a href="../ueberuns/ueberuns.html">Crew</a></li>
+            </ul>
+        </div>
+        <div id="burgerbutton" style="cursor: pointer;">
+            <img src="/Bilder/burgermenu/burgermenu.png" alt="Burgermenu Button">
+        </div>
+    </div>
 
     <header></header>
     <main>
@@ -62,6 +53,27 @@
     </div>
 
     <script src="/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var burgerButton = document.getElementById('burgerbutton');
+            var menu = document.getElementById('menu');
+
+            burgerButton.addEventListener('click', function () {
+                if (menu.style.display === 'block') {
+                    menu.style.opacity = '0';
+                    setTimeout(() => {
+                        menu.style.display = 'none';
+                    }, 500);
+                } else {
+                    menu.style.display = 'block';
+                    setTimeout(() => {
+                        menu.style.opacity = '1';
+                    }, 10);
+                }
+            });
+        });
+    </script>
 
     <style>
         body {
