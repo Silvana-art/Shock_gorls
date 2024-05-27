@@ -1,68 +1,153 @@
 const actors = [
     {
-        name: 'Anne Hathaway',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/annehathaway_hover.png'
+        name: 'Alexandra Daddario',
+        image: '/Bilder/Mainpage/3D/alexandradaddario_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/alexandradaddario_raw.png'
     },
     {
-        name: 'Jason Statham',
-        image: '/Bilder/jason.png',
-        hoverImage: '/Bilder/jason_hover.png'
-    },
-    {
-        name: 'Johnny Depp',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/annehathaway_hover.png'
-    },
-    {
-        name: 'Matt Damon',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/mattdamon_hover.png'
-    },
-    {
-        name: 'Harrison Ford',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/harrisonford_hover.png'
-    },
-    {
-        name: 'Florence Pugh',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/florencepugh_hover.png'
-    },
-    {
-        name: 'Emma Stone',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/emmastone_hover.png'
-    },
-    {
-        name: 'Jason Momoa',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/jasonmomoa_hover.png'
+        name: 'Angelina Jolie',
+        image: '/Bilder/Mainpage/3D/angelinajolie_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/angelinajolie_raw.png'
     },
     {
         name: 'Anna Sawai',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/annasawai_hover.png'
+        image: '/Bilder/Mainpage/3D/annasawai_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/annasawai_raw.png'
     },
     {
-        name: 'Nava Mau',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/navamau_hover.png'
+        name: 'Bryan Cranston',
+        image: '/Bilder/Mainpage/3D/bryancranston_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/bryancranston_raw.png'
     },
     {
         name: 'Ella Purnell',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/ellapurnell_hover.png'
+        image: '/Bilder/Mainpage/3D/ellapurnell_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/ellapurnell_raw.png'
     },
     {
-        name: 'Jessica Gunning',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/jessicagunning_hover.png'
+        name: 'Emma Stone',
+        image: '/Bilder/Mainpage/3D/emmastone_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/emmastone_raw.png'
+    },
+    {
+        name: 'Ethan Hawke',
+        image: '/Bilder/Mainpage/3D/ethanhawke_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/ethanhawke_raw.png'
     },
     {
         name: 'Eva Green',
-        image: '/Bilder/annehathaway.png',
-        hoverImage: '/Bilder/evagreen_hover.png'
+        image: '/Bilder/Mainpage/3D/evagreen_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/evagreen_raw.png'
+    },
+    {
+        name: 'Florence Pugh',
+        image: '/Bilder/Mainpage/3D/florencepugh_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/florencepugh_raw.png'
+    },
+    {
+        name: 'Gal Gadot',
+        image: '/Bilder/Mainpage/3D/galgadot_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/galgadot_raw.png'
+    },
+    {
+        name: 'Gina Gershon',
+        image: '/Bilder/Mainpage/3D/ginagershon_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/ginagershon_raw.png'
+    },
+    {
+        name: 'Harrison Ford',
+        image: '/Bilder/Mainpage/3D/harrisonford_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/harrisonford_raw.png'
+    },
+    {
+        name: 'Jack Black',
+        image: '/Bilder/Mainpage/3D/jackblack_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/jackblack_raw.png'
+    },
+    {
+        name: 'Jason Momoa',
+        image: '/Bilder/Mainpage/3D/jasonmomoa_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/jasonmomoa_raw.png'
+    },
+    {
+        name: 'Jenna Ortega',
+        image: '/Bilder/Mainpage/3D/jennaortega_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/jennaortega_raw.png'
+    },
+    {
+        name: 'John Goodman',
+        image: '/Bilder/Mainpage/3D/johngoodman_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/johngoodman_raw.png'
+    },
+    {
+        name: 'Johnny Depp',
+        image: '/Bilder/Mainpage/3D/johnnydepp_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/johnnydepp_raw.png'
+    },
+    {
+        name: 'Kevin Hart',
+        image: '/Bilder/Mainpage/3D/kevinhart_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/kevinhart_raw.png'
+    },
+    {
+        name: 'Kristen Stewart',
+        image: '/Bilder/Mainpage/3D/kristenstewart_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/kristenstewart_raw.png'
+    },
+    {
+        name: 'Liam Neeson',
+        image: '/Bilder/Mainpage/3D/liamneeson_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/liamneeson_raw.png'
+    },
+    {
+        name: 'Marry Shelley',
+        image: '/Bilder/Mainpage/3D/maryshelley_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/maryshelley_raw.png'
+    },
+    {
+        name: 'Matt Damon',
+        image: '/Bilder/Mainpage/3D/mattdamon_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/mattdamon_raw.png'
+    },
+    {
+        name: 'Millie Bobby Brown',
+        image: '/Bilder/Mainpage/3D/milliebobbybrown_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/milliebobbybrown_raw.png'
+    },
+    {
+        name: 'Nicolas Cage',
+        image: '/Bilder/Mainpage/3D/nicolascage_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/nicolascage_raw.png'
+    },
+    {
+        name: 'Nicole Kidman',
+        image: '/Bilder/Mainpage/3D/nicolekidman_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/nicolekidman_raw.png'
+    },
+    {
+        name: 'Robert De Niro',
+        image: '/Bilder/Mainpage/3D/robertdeniro_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/robertdeniro_raw.png'
+    },
+    {
+        name: 'Rosamund Pike',
+        image: '/Bilder/Mainpage/3D/rosamundpike_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/rosamundpike_raw.png'
+    },
+    {
+        name: 'Russell Crowe',
+        image: '/Bilder/Mainpage/3D/russellcrowe_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/russellcrowe_raw.png'
+    },
+    {
+        name: 'Sylvester Stallone',
+        image: '/Bilder/Mainpage/3D/sylvesterstallone_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/sylvesterstallone_raw.png'
+    },
+    {
+        name: 'Uma Thurman',
+        image: '/Bilder/Mainpage/3D/umathurman_3D.png',
+        hoverImage: '/Bilder/Mainpage/raw/umathurman_raw.png'
     },
 ];
 
