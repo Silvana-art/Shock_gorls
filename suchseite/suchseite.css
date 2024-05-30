@@ -1,6 +1,8 @@
 body {
     background-color: blue;
     font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', cursive;
+    justify-items: center;
 }
 
 .menu-container {
