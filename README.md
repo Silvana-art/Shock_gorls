@@ -10,12 +10,11 @@
 
 #### Quellen und Methodik
 
-Methodik
+Methodik<br>
 Um uns die Materie anzueignen, waren uns die Cheatsheets aus dem Unterricht und Tutorials auf YT eine grosse Hilfe. 
-
 Mit dem angeeigneten Grundwissen setzten wir uns ans Projekt und das Programmieren konnte beginnen!
 
-Problemlösung
+Problemlösung<br>
 Auf dem Weg dieses Projektes stiessen wir auf viele Probleme. In solchen Fällen probierten wir das Problem vorerst selbst zu lösen. Hier waren ChatGPT und die Unterlagen aus dem Unterricht eine grosse Hilfe.
 
 
