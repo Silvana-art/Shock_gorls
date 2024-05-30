@@ -106,15 +106,15 @@ p {
 }
 
 p.kamera {
-    color: #52cf21;
+    color: white;
 }
 
 p.ton {
-    color: #93e7ea;
+    color: white;
 }
 
 p.schnitt {
-    color: #fab2fd;
+    color: white;
 }
 
 h1 {
@@ -146,19 +146,19 @@ h2 {
 }
 
 .drei {
-    color: #52cf21;
+    color: white;
 }
 
 .zwei {
-    color: #93e7ea;
+    color: white;
 }
 
 .eins {
-    color: #fab2fd;
+    color: white;
 }
 
 .am {
-    color: rgb(255, 255, 146) !important; 
+    color: white; 
 }
 
 /* Animation */
