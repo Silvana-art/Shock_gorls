@@ -26,9 +26,9 @@ body {
 }
 
 #burgerbutton:hover {
-        transform: scale(1.1); 
-        opacity: 0.8; 
-    }
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
 
 #menu {
     color: white;
@@ -47,16 +47,16 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
 }
-    
+
 #menu a {
     color: white;  
     text-decoration: none;  
 }   
-    
+
 #menu a:hover {
     text-decoration: underline;  
 }
-    
+
 .bilderuns img {
     width: 100%; 
     height: auto; 
@@ -64,6 +64,57 @@ body {
 
 .bilderuns {
     display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: wrap;
+    gap: 0; /* Ensure there is no gap between the items */
+    margin: 0; /* Remove any default margin */
+}
+
+.bilderuns > div {
+    position: relative;
+    text-align: center;
+    width: 32%; /* Adjust width to make sure there is no gap */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.bilderuns .bildnormal {
+    display: block;
+    width: 100%; /* Adjust width to fit parent */
+    height: auto; /* Keep aspect ratio */
+}
+
+.bilderuns .bildhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width to fit parent */
+    height: auto; /* Keep aspect ratio */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bilderuns > div:hover .bildhover {
+    opacity: 1;
+}
+
+p {
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    text-align: center;
+}
+
+p.kamera {
+    color: #52cf21;
+}
+
+p.ton {
+    color: #93e7ea;
+}
+
+p.schnitt {
+    color: #fab2fd;
 }
 
 h1 {
@@ -95,21 +146,20 @@ h2 {
 }
 
 .drei {
-    color: #52cf21
+    color: #52cf21;
 }
 
 .zwei {
-    color: #93e7ea
+    color: #93e7ea;
 }
 
 .eins {
-    color: #fab2fd
+    color: #fab2fd;
 }
 
 .am {
     color: rgb(255, 255, 146) !important; 
 }
-
 
 /* Animation */
 
@@ -148,7 +198,6 @@ h2 {
     opacity: 0;
     transform: translateX(-100%); 
     animation: slide-in 1s forwards; 
-    
 }
 
 @keyframes slide-in {
@@ -162,10 +211,7 @@ h2 {
 .titel h2 {
     text-align: center;
     animation: fly-in 1s ease forwards;
-    /* Dreidimensionaler Text */
-    /*text-shadow: 0.5vw 0.5vw 2vw rgb(255, 252, 160); /* Schatten für Tiefe */
     transform: perspective(100px) rotateY(20deg); /* 3D-Transformation für die Perspektive */
-
 }
 
 /* Zahlen und "action" */
@@ -197,82 +243,19 @@ h2 {
     animation-delay: 1.9s; /* Verzögerung von 1.9 Sekunden */
 }
 
-.bilderuns {
-    display: flex; /* Added to arrange images in a row */
+/* Responsive */
+@media (max-width: 768px) {
+    .bilderuns {
+        flex-direction: column; /* Change direction to column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .bilderuns > div {
+        width: 80%;
+        margin-bottom: 0; /* Remove margin between items */
+    }
+
+    p {
+        font-size: 4vw;
+    }
 }
-
-.bilderuns > div {
-    position: relative;
-    width: fit-content; /* Ensure the container fits the content */
-}
-
-.bilderuns .bildnormal {
-    display: block;
-    width: 100%; /* Anpassung je nach gewünschter Größe */
-    height: auto; /* Anpassung je nach gewünschter Größe */
-}
-
-.bilderuns .bildhover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Anpassung je nach gewünschter Größe */
-    height: auto; /* Anpassung je nach gewünschter Größe */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.bilderuns > div:hover .bildhover {
-    opacity: 1;
-}
-
-
-/* Positionierung des Bildes oben links */
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-/*.spule {
-    position: fixed; 
-    top: 2vw; 
-    left: 2vw; 
-    width: 10vw;
-    animation: rotate 5s linear infinite;
-}
-*/
-
-p {
-    color: white;
-    font-size: 2vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-}
-
-.beschrieb {
-    display: flex;
-    justify-content: space-around;
-    padding: 5vw;
-}
-
-p.kamera {
-text-align: center;
-align-self: left;
-margin-left: -2vw;
-color: #52cf21
-}
-
-p.ton {
-    text-align: center;
-    align-self: center;
-    margin-left: 12vw;
-    color: #93e7ea
-}
-
-p.schnitt {
-    text-align: center;
-    align-self: right;
-    margin-left: 12vw;
-    color: #fab2fd
-}
-
