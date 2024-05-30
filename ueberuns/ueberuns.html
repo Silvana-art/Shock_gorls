@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../ueberuns/ueberuns.css">
-    <script src="../ueberuns/ueberuns.js"></script>
+    <script src="../ueberuns/ueberuns.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
     <style>
         body {
@@ -28,27 +28,6 @@
             <img src="/Bilder/burgermenu/burgermenu.png" alt="Burgermenu Button">
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var burgerButton = document.getElementById('burgerbutton');
-            var menu = document.getElementById('menu');
-
-            burgerButton.addEventListener('click', function () {
-                if (menu.style.display === 'block') {
-                    menu.style.opacity = '0';
-                    setTimeout(() => {
-                        menu.style.display = 'none';
-                    }, 500);
-                } else {
-                    menu.style.display = 'block';
-                    setTimeout(() => {
-                        menu.style.opacity = '1';
-                    }, 10);
-                }
-            });
-        });
-    </script>
 
     <div class="titel">
         <h2>Behind<br> the <br>scenes</h2>
@@ -80,7 +59,6 @@
             <p class="schnitt">Silvana kreierte die peppige Behind The Scenes seite.</p>
         </div>
     </div>
-    
-    <!-- <script src="/js/script.js"></script> -->
 </body>
+
 </html>
