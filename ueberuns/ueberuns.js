@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
     var burgerButton = document.getElementById('burgerbutton');
     var menu = document.getElementById('menu');
