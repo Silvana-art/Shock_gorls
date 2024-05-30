@@ -1,3 +1,8 @@
+body {
+    background-color: blue;
+    font-family: 'Audiowide', cursive;
+}
+
 .menu-container {
     display: flex;
     align-items: center;
@@ -7,7 +12,7 @@
 
 #burgerbutton {
     position: fixed;
-    z-index: 101; /* Stellen Sie sicher, dass dieser Wert höher ist als der des Menüs */
+    z-index: 101;
     margin-top: 5%;
     margin-right: 1%;
     transition: transform 1s ease;
@@ -20,9 +25,9 @@
 }
 
 #burgerbutton:hover {
-        transform: scale(1.1); 
-        opacity: 0.8; 
-    }
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
 
 #menu {
     color: white;
@@ -31,25 +36,41 @@
     transition: opacity 1s ease; 
     position: fixed;
     top: 0;
-    padding-right: 5em;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 100; 
-    display: none; 
     text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
+    display: none;
 }
-    
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    margin: 20px 0;
+}
+
 #menu a {
     color: white;  
     text-decoration: none;  
-}
-    
-    
+    font-size: 2em;
+}   
+
 #menu a:hover {
     text-decoration: underline;  
 }
 
-
 .suche {
-    /* background-image: url(../Bilder/filmrolle.jpg); */
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -70,8 +91,6 @@
     font-size: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .image-container {
     display: inline-block;
@@ -114,7 +133,6 @@
     box-sizing: border-box; /* Include padding in width */
     border-radius: 40px;
     z-index: 2; /* Ensure overlay appears above other content */
-      
 }
 
 .image-container:hover .name-overlay {
@@ -191,8 +209,6 @@
     cursor: pointer;
 }
 
-
-
 #app {
     margin-top: 2vw;
     display: flex;
@@ -214,13 +230,3 @@ h1 {
     position: relative;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
