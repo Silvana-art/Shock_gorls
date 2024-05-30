@@ -2,6 +2,7 @@ body {
     background-image: url(../Bilder/Background/Untitled_Artwork.png);
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Audiowide', cursive;
 }
 
 .menu-container {
@@ -17,6 +18,7 @@ body {
     margin-top: 7%;
     margin-right: 1%;
     transition: transform 1s ease;
+    cursor: pointer;
 }
 
 #burgerbutton img {
@@ -37,20 +39,33 @@ body {
     transition: opacity 1s ease; 
     position: fixed;
     top: 0;
-    padding-right: 5em;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 100; 
     text-shadow: 4px 6px 10px rgba(255, 255, 255, 0.76); 
 }
 
-#menu.show-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 1s ease;
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    margin: 20px 0;
 }
 
 #menu a {
     color: white;  
     text-decoration: none;  
+    font-size: 2em;
 }   
 
 #menu a:hover {
@@ -106,15 +121,15 @@ p {
 }
 
 p.kamera {
-    color: white;
+    color: #52cf21;
 }
 
 p.ton {
-    color: white;
+    color: #93e7ea;
 }
 
 p.schnitt {
-    color: white;
+    color: #fab2fd;
 }
 
 h1 {
@@ -146,19 +161,19 @@ h2 {
 }
 
 .drei {
-    color: white;
+    color: #52cf21;
 }
 
 .zwei {
-    color: white;
+    color: #93e7ea;
 }
 
 .eins {
-    color: white;
+    color: #fab2fd;
 }
 
 .am {
-    color: white; 
+    color: rgb(255, 255, 146) !important; 
 }
 
 /* Animation */
@@ -257,5 +272,22 @@ h2 {
 
     p {
         font-size: 4vw;
+    }
+
+    #burgerbutton {
+        margin-top: 5%;
+        margin-right: 3%;
+    }
+
+    #menu {
+        font-size: 1.5em;
+    }
+
+    #menu ul li {
+        margin: 15px 0;
+    }
+
+    #menu a {
+        font-size: 1.5em;
     }
 }
