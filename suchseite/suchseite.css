@@ -3,7 +3,6 @@ body {
     font-family: 'Audiowide', cursive;
 }
 
-/* Gemeinsame Styles für Desktop und mobile Geräte */
 .menu-container {
     display: flex;
     align-items: center;
@@ -14,8 +13,8 @@ body {
 #burgerbutton {
     position: fixed;
     z-index: 101;
-    top: 20px; /* Feste Position von oben für Desktop */
-    right: 20px; /* Feste Position von rechts für Desktop */
+    top: 20px; 
+    right: 20px; 
     transition: transform 1s ease;
 }
 
@@ -74,8 +73,8 @@ body {
 /* Responsive Styles für mobile Geräte */
 @media (max-width: 768px) {
     #burgerbutton {
-        top: 10px; /* Position von oben für mobile Geräte */
-        right: 10px; /* Position von rechts für mobile Geräte */
+        top: 10px; 
+        right: 10px; 
     }
 
     #menu {
@@ -105,7 +104,7 @@ body {
 }
 
 #searchBocks {
-    width: 50%; /* Adjust width as needed */
+    width: 50%; 
     max-width: 500px;
     padding: 10px;
     margin-bottom: 40px;
@@ -117,9 +116,9 @@ body {
 
 .image-container {
     display: inline-block;
-    width: 10%; /* Adjust width as needed */
-    margin: 0%; /* Add space between images */
-    position: relative; /* Ensure relative positioning for absolute positioning of hover images */
+    width: 10%; 
+    margin: 0%; 
+    position: relative; 
     cursor: pointer;
 }
 
@@ -129,37 +128,37 @@ body {
 }
 
 .hoverimage {
-    display: none; /* Initially hide the hover image */
+    display: none; 
     position: absolute;
     top: 0;
     left: 0;
-    width: 140%; /* Make hover image same width as container */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 1; /* Ensure hover image appears above other content */
+    width: 140%; 
+    height: auto; 
+    z-index: 1;
 }
 
 .image-container:hover .hoverimage {
-    display: block; /* Show hover image on hover */
+    display: block; 
 }
 
 .name-overlay {
-    display: none; /* Initially hide the name overlay */
+    display: none; 
     position: absolute;
-    bottom: 10%; /* Adjust as needed for positioning */
+    bottom: 10%; 
     left: 20%;
-    width: 100%; /* Make name overlay same width as container */
-    text-align: center; /* Center text */
-    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: rgb(255, 255, 255); /* Text color */
-    padding: 7px; /* Padding for text */
-    font-size: 110%; /* Adjust font size as needed */
-    box-sizing: border-box; /* Include padding in width */
+    width: 100%; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: rgb(255, 255, 255); 
+    padding: 7px; 
+    font-size: 110%; 
+    box-sizing: border-box; 
     border-radius: 40px;
-    z-index: 2; /* Ensure overlay appears above other content */
+    z-index: 2; 
 }
 
 .image-container:hover .name-overlay {
-    display: block; /* Show name overlay on hover */
+    display: block;
 }
 
 #actorImage {
@@ -167,10 +166,10 @@ body {
     height: auto;
     display: block;
     margin: 0 auto 20px;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%; 
     box-shadow: 0 0 20px rgb(255, 254, 254);
-    background-color: #ffffff; /* Set the background color to white */
-    padding: 10px; /* Add some padding */
+    background-color: #ffffff; 
+    padding: 10px; 
 }
 
 #movieList {
@@ -189,26 +188,25 @@ body {
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
-/* Modal styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
 }
 
 .modal-content {
     background-color: #d01212;
-    margin: 3% auto; /* 3% from the top and centered */
+    margin: 3% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
     text-align: center;
 }
 
@@ -248,8 +246,8 @@ h1 {
 }
 
 .image-container {
-    flex: 1 1 200px; /* Flex-Grow, Flex-Shrink, Basisgröße */
-    max-width: 200px; /* Maximale Breite für jedes Bild */
+    flex: 1 1 200px; 
+    max-width: 200px; 
     position: relative;
     cursor: pointer;
 }
