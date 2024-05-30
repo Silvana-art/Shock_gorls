@@ -15,8 +15,8 @@ body {
 #burgerbutton {
     position: fixed;
     z-index: 101;
-    top: 20px; 
-    right: 20px; 
+    top: 20px;
+    right: 20px;
     transition: transform 1s ease;
 }
 
@@ -74,8 +74,8 @@ body {
 
 @media (max-width: 768px) {
     #burgerbutton {
-        top: 10px; 
-        right: 10px; 
+        top: 10px;
+        right: 10px;
     }
 
     #menu {
@@ -91,40 +91,39 @@ body {
     }
 }
 
-
 .bilderuns img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .bilderuns {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 0;
     margin: 0;
+    gap: 0; /* Set the gap to 0 */
 }
 
 .bilderuns > div {
     position: relative;
     text-align: center;
-    width: 32%; 
-    margin: 0; 
-    padding: 0; 
+    width: 32%;
+    margin: 0;
+    padding: 0;
 }
 
 .bilderuns .bildnormal {
     display: block;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .bilderuns .bildhover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -193,7 +192,7 @@ h2 {
 }
 
 .am {
-    color: white; 
+    color: white;
 }
 
 @keyframes fly-in {
@@ -224,69 +223,70 @@ h2 {
 
 .titel {
     display: flex;
-    justify-content: center; 
-    overflow: hidden; 
+    justify-content: center;
+    overflow: hidden;
     padding-bottom: 5vw;
     opacity: 0;
-    transform: translateX(-100%); 
-    animation: slide-in 1s forwards; 
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
 }
 
 @keyframes slide-in {
     to {
-        opacity: 1; 
-        transform: translateX(0); 
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
 .titel h2 {
     text-align: center;
     animation: fly-in 1s ease forwards;
-    transform: perspective(100px) rotateY(20deg); 
+    transform: perspective(100px) rotateY(20deg);
 }
 
 .action {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .action h1 {
     display: inline-block;
-    animation: fly-in 0.5s ease forwards; 
+    animation: fly-in 0.5s ease forwards;
     opacity: 0;
 }
 
 .action h1:nth-child(1) {
-    animation-delay: 1s; 
+    animation-delay: 1s;
 }
 
 .action h1:nth-child(2) {
-    animation-delay: 1.3s; 
+    animation-delay: 1.3s;
 }
 
 .action h1:nth-child(3) {
-    animation-delay: 1.6s; 
+    animation-delay: 1.6s;
 }
 
 .action h1:nth-child(4) {
-    animation-delay: 1.9s; 
+    animation-delay: 1.9s;
 }
 
 @media (max-width: 768px) {
     .bilderuns {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
     }
 
     .bilderuns > div {
         width: 80%;
-        margin-bottom: 0; 
+        margin: 0;
+        padding: 0;
     }
 
     p {
         font-size: 4vw;
     }
+
 }
-
-
