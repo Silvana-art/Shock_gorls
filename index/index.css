@@ -46,46 +46,40 @@ h2 {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
-button {
-    background-color: #ffffff;
-    color: black;
+.animated-button {
+    display: inline-block;
     padding: 15px 30px;
-    border: 2px solid black;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-family: 'Audiowide';
-    letter-spacing: 3px;
-    width: 200px;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slide-in 2s forwards;
-    animation-delay: 3.5s;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: #fff;
-    opacity: 0.8;
-}
-
-a {
-    color: inherit;
+    background-color: white;
+    color: black;
+    text-align: center;
     text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: slide-in 2.5s forwards;
 }
 
-a:hover {
-    color: inherit;
-    text-decoration: underline;
+.animated-button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
 }
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 768px) {
     h1 {
@@ -96,9 +90,8 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    button {
+    .animated-button {
         font-size: 1.2em;
-        width: 150px;
         padding: 10px 20px;
     }
 }
@@ -112,10 +105,9 @@ a:hover {
         font-size: 1.2rem;
     }
 
-    button {
-        font-size: 1em;
-        width: 120px;
-        padding: 8px 15px;
+    .animated-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
     }
 }
 
