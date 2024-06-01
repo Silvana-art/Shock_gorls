@@ -15,8 +15,8 @@ body {
 #burgerbutton {
     position: fixed;
     z-index: 101;
-    top: 20px; 
-    right: 20px; 
+    top: 20px;
+    right: 20px;
     transition: transform 1s ease;
 }
 
@@ -75,8 +75,8 @@ body {
 /* Responsive Styles für mobile Geräte */
 @media (max-width: 768px) {
     #burgerbutton {
-        top: 10px; 
-        right: 10px; 
+        top: 10px;
+        right: 10px;
     }
 
     #menu {
@@ -106,7 +106,7 @@ body {
 }
 
 #searchBocks {
-    width: 50%; 
+    width: 50%;
     max-width: 500px;
     padding: 10px;
     margin-bottom: 40px;
@@ -118,9 +118,9 @@ body {
 
 .image-container {
     display: inline-block;
-    width: 10%; 
-    margin: 0%; 
-    position: relative; 
+    width: 10%;
+    margin: 0%;
+    position: relative;
     cursor: pointer;
 }
 
@@ -130,33 +130,33 @@ body {
 }
 
 .hoverimage {
-    display: none; 
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 140%; 
-    height: auto; 
+    width: 140%;
+    height: auto;
     z-index: 1;
 }
 
 .image-container:hover .hoverimage {
-    display: block; 
+    display: block;
 }
 
 .name-overlay {
-    display: none; 
+    display: none;
     position: absolute;
-    bottom: 10%; 
+    bottom: 10%;
     left: 20%;
-    width: 100%; 
-    text-align: center; 
-    background-color: rgba(0, 0, 0, 0.3); 
-    color: rgb(255, 255, 255); 
-    padding: 7px; 
-    font-size: 110%; 
-    box-sizing: border-box; 
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    font-size: 110%;
+    box-sizing: border-box;
     border-radius: 40px;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .image-container:hover .name-overlay {
@@ -165,13 +165,14 @@ body {
 
 #actorImage {
     width: 15vw;
+    min-width: 140px;
     height: auto;
     display: block;
     margin: 0 auto 20px;
-    border-radius: 50%; 
+    border-radius: 50%;
     box-shadow: 0 0 20px rgb(255, 254, 254);
-    background-color: #ffffff; 
-    padding: 10px; 
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 #movieList {
@@ -188,32 +189,33 @@ body {
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    hyphens: auto;
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 100; 
+    display: none;
+    position: fixed;
+    z-index: 100;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background-color: #d01212;
-    margin: 3% auto; 
+    margin: 3% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 80%;
     text-align: center;
 }
 
 .modal-content h2 {
-    font-size: 3vw;
+    font-size: clamp(24px, 3vw, 72px);
     margin: 2%;
     color: white;
 }
@@ -248,10 +250,22 @@ h1 {
 }
 
 .image-container {
-    flex: 1 1 200px; 
-    max-width: 200px; 
+    flex: 1 1 200px;
+    max-width: 200px;
     position: relative;
     cursor: pointer;
 }
 
+@media screen and (max-width: 444px) {
+    #app {
+        margin-right: 0;
+    }
 
+    .image-container img {
+        max-width: 100%;
+    }
+
+    #movieList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
