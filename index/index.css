@@ -38,13 +38,6 @@ h2 {
     font-size: 2rem;
 }
 
-@keyframes slide-in {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .button {
     text-align: center;
     margin-top: 20px;
